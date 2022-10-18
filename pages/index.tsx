@@ -4,8 +4,6 @@ import Image from 'next/image'
 import Header from '../components/Header'
 import {
   useContract,
-  useMetamask,
-  useDisconnect,
   useAddress,
   useContractRead,
   useContractWrite
@@ -19,6 +17,7 @@ import CountdownTimer from '../components/CountdownTimer'
 import toast from 'react-hot-toast'
 import Marquee from "react-fast-marquee"
 import AdminControls from '../components/AdminControls'
+import ProfileImage from '../public/profile-image.jpeg'
 
 const Home: NextPage = () => {
   const address = useAddress()
@@ -231,13 +230,15 @@ const Home: NextPage = () => {
         </div>
       </div>
       <footer className="border-t border-emerald-500/20 flex items-center text-white justify-center p-5">
-        <img 
-          className="h-10 w-10 filter hue-rotate-90 opacity-20 rounded-full"
-          src="https://media-exp1.licdn.com/dms/image/C5603AQE2yYtsE2vG_Q/profile-displayphoto-shrink_200_200/0/1662439278108?e=1671062400&v=beta&t=-X1WKqXL8W7aVeiQUhaC4dDUUQm6d6E5kxlhNHEhgVc"
-          alt=""
-        />
+        <div className="h-10 w-10 hue-rotate-90 opacity-20 rounded-full overflow-hidden">
+          <Image 
+            src={ProfileImage}
+            alt=""
+            layout="fill"
+          />
+        </div>
         <p className="text-sm text-emerald-900 pl-5">
-          Please gamble responsibly and your own risk. We are not liable for any amount of money lost/gained using this application. 
+          Please gamble responsibly and at your own risk. We are not liable for any amount of money lost/gained using this application. 
         </p>
       </footer>
     </div>
