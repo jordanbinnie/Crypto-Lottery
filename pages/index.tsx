@@ -230,18 +230,14 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <footer className="border-t border-emerald-500/20 flex items-center text-white justify-between p-5">
+      <footer className="border-t border-emerald-500/20 flex items-center text-white justify-center p-5">
         <img 
           className="h-10 w-10 filter hue-rotate-90 opacity-20 rounded-full"
           src="https://media-exp1.licdn.com/dms/image/C5603AQE2yYtsE2vG_Q/profile-displayphoto-shrink_200_200/0/1662439278108?e=1671062400&v=beta&t=-X1WKqXL8W7aVeiQUhaC4dDUUQm6d6E5kxlhNHEhgVc"
           alt=""
         />
         <p className="text-sm text-emerald-900 pl-5">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', 
-          making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
-          and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
-          sometimes by accident, sometimes on purpose (injected humour and the like).
+          Please gamble responsibly and your own risk. We are not liable for any amount of money lost/gained using this application. 
         </p>
       </footer>
     </div>

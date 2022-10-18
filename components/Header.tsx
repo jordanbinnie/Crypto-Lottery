@@ -11,15 +11,17 @@ function Header() {
     return (
         <header className="grid grid-cols-2 md:grid-cols-5 justify-between items-center p-5">
             <div className="flex items-center space-x-2">
-                <img className="rounded-full h-20 w-20" alt="" src="https://media-exp1.licdn.com/dms/image/C5603AQE2yYtsE2vG_Q/profile-displayphoto-shrink_200_200/0/1662439278108?e=1671062400&v=beta&t=-X1WKqXL8W7aVeiQUhaC4dDUUQm6d6E5kxlhNHEhgVc" />
-                <div className="flex flex-col">
-                <h1 className="text-lg text-white font-bold">Crypto Lottery</h1>
-                <p className="text-xs text-emerald-500 truncate">User {address?.substring(0, 5)}...{address?.substring(address.length, address.length-5)}</p> 
+                {/* <img className="rounded-full h-20 w-20" alt="" src="https://media-exp1.licdn.com/dms/image/C5603AQE2yYtsE2vG_Q/profile-displayphoto-shrink_200_200/0/1662439278108?e=1671062400&v=beta&t=-X1WKqXL8W7aVeiQUhaC4dDUUQm6d6E5kxlhNHEhgVc" /> */}
+                <div className="bg-[#036757] py-3 px-5 rounded-md">
+                    <div className="flex flex-col">
+                    <h1 className="text-lg text-white font-bold">Crypto Lottery</h1>
+                    <p className="text-xs text-emerald-500 truncate">User {address?.substring(0, 5)}...{address?.substring(address.length, address.length-5)}</p> 
+                </div>
                 </div>
             </div>
 
             <div className="hidden md:flex md:col-span-3 items-center justify-center rounded-md">
-                <div className="bg=[#0A1F1C] p-4 space-x-2">
+                <div className="bg-[#0A1F1C] p-4 space-x-2">
                     <NavButton isActive title="Buy Tickets" />
                     <NavButton onClick={disconnect} title="Logout" />
                 </div>
